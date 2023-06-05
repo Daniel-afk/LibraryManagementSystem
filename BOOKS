@@ -1,11 +1,8 @@
-CREATE TABLE `books` (
-`bid` int(11) NOT NULL AUTO_INCREMENT,
-`book_isbn` varchar(40) NOT NULL,
-`book_name` varchar(50) NOT NULL,
-`book_publisher` varchar(50) NOT NULL,
-`book_edition` varchar(50) NOT NULL,
-`book_genre` varchar(20) NOT NULL,
-`book_price` int(11) NOT NULL,
-`book_pages` int(11) NOT NULL,
-PRIMARY KEY (`bid`)
+-- Books table
+CREATE TABLE books (
+    book_id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    author VARCHAR(100) NOT NULL,
+    publication_date DATE,
+    availability BOOLEAN DEFAULT TRUE
 )
